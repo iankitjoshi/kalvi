@@ -1,5 +1,5 @@
 import './App.scss';
-import { AppBar, Box, Toolbar, Typography, Button, Grid, Card, CardContent} from '@mui/material';
+import { AppBar, Box, Toolbar, Typography, Button, Grid, Card, CardContent, Container } from '@mui/material';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 
 function App() {
@@ -30,30 +30,36 @@ function App() {
                     </div>
                 </div>
             </div>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className="two-cards" spacing={10} >
-                    <Card sx={{ minWidth: 275 }} style={{margin : '30px'}} >
-                        <CardContent>
+            <Container>
+                <Grid container direction="row" justifyContent="center" className="two-cards" spacing={3} >
+                    <Grid item xs={12} sm={12} md={6} lg={6}>
+                        <Card>
+                            <CardContent>
+                                    <div className="icon-box" >
+                                        <div className="icon" >
+                                            <img src="https://kalvi.tech/static/media/a.ed7384a1.svg" />
+                                        </div>
+                                        <h4>Explore</h4>
+                                        <p>Fun, affordable suvy science/math clubs!</p>
+                                    </div>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={6} lg={6}>
+                        <Card>
+                            <CardContent>
                                 <div className="icon-box" >
                                     <div className="icon" >
-                                        <img src="https://kalvi.tech/static/media/a.ed7384a1.svg" />
+                                        <img src="https://kalvi.tech/static/media/discord.1a0c3dc4.svg" style={{width : '69px'}} />
                                     </div>
                                     <h4>Explore</h4>
                                     <p>Fun, affordable suvy science/math clubs!</p>
                                 </div>
-                         </CardContent>
-                    </Card>
-                <Card sx={{ minWidth: 275 }} style={{ margin: '30px' }} >
-                    <CardContent>
-                        <div className="icon-box" >
-                            <div className="icon" >
-                                <img src="https://kalvi.tech/static/media/discord.1a0c3dc4.svg" style={{width : '69px'}} />
-                            </div>
-                            <h4>Explore</h4>
-                            <p>Fun, affordable suvy science/math clubs!</p>
-                        </div>
-                    </CardContent>
-                </Card>
-            </Grid>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                </Grid>
+            </Container>
             <div className="about-us" >
                 <div className="mx-auto">
                     <h1 className="main-heading">About Us</h1>

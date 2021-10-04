@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+header{
   height: 120px;
-  background-color: white !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .logo-img{
@@ -34,6 +34,16 @@
   position: relative;
   text-align: center;
   color: white;
+}
+
+.container::before {
+  content: "";
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .centered {
@@ -88,11 +98,11 @@
 }
 
 .two-cards{
-  margin: 10% 0 !important;
+  width: 100% !important;
+  padding: 0;
+  max-width: 650px;
+  margin: 10% auto !important;
     .icon-box {
-      // margin-top: 5px;
-      // height: 300px;
-      // box-shadow: 0 0 25px 0 rgb(0 0 0 / 10%);
       padding: 45px 25px;
       transition: all .4s ease-in-out;
       background: #fff;
